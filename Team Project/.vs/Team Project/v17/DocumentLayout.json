@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\",
+  "WorkspaceRootPath": "C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|c:\\users\\wwwbj\\onedrive\\escritorio\\team project\\assets\\script\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|c:\\users\\\uAE40\uD604\uC11C\\git\\2024_01_b_temaproject_5\\team project\\assets\\script\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\assets\\script\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\assets\\script\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F72D66EF-217B-706A-F39A-87C21FCDB6BB}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\objectmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Sword.cs",
-              "DocumentMoniker": "C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\Assets\\Script\\Sword.cs",
+              "DocumentMoniker": "C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\Assets\\Script\\Sword.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Sword.cs",
-              "ToolTip": "C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\Assets\\Script\\Sword.cs",
+              "ToolTip": "C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\Assets\\Script\\Sword.cs",
               "RelativeToolTip": "Assets\\Script\\Sword.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -41,9 +41,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\Assets\\Script\\PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\Assets\\Script\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\Assets\\Script\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\Assets\\Script\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -53,9 +53,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ObjectManager.cs",
-              "DocumentMoniker": "C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\Assets\\Script\\ObjectManager.cs",
+              "DocumentMoniker": "C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\Assets\\Script\\ObjectManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ObjectManager.cs",
-              "ToolTip": "C:\\Users\\wwwbj\\OneDrive\\Escritorio\\Team Project\\Assets\\Script\\ObjectManager.cs",
+              "ToolTip": "C:\\Users\\\uAE40\uD604\uC11C\\git\\2024_01_B_TemaProject_5\\Team Project\\Assets\\Script\\ObjectManager.cs",
               "RelativeToolTip": "Assets\\Script\\ObjectManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
