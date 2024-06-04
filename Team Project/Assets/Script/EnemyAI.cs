@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -8,8 +9,9 @@ public class EnemyAI : MonoBehaviour
     public float lookRadius = 10f;
     public float attackRadius = 2f;
     public float moveSpeed = 3f;
-    public float attackRate = 1f;
-    public int attackDamage = 10;
+    public float attackRate = 2f;
+    public int attackDamage = 15;
+    public int health = 100;
 
     private Rigidbody rb;
     private float nextAttackTime = 0f;
@@ -53,5 +55,21 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, lookRadius);
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, attackRadius);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        Debug.Log("Enemy health: " + health);
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Enemy died!");
+        Destroy(gameObject);
     }
 }
