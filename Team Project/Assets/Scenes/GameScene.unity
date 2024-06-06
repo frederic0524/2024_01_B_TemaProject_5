@@ -259,7 +259,7 @@ MonoBehaviour:
   lookRadius: 10
   attackRadius: 2
   moveSpeed: 3
-  attackRate: 1.5
+  attackRate: 2
   attackDamage: 15
   health: 100
 --- !u!54 &770316055
