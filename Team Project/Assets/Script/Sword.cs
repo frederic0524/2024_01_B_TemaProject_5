@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    private ObjectManager objectManager;
+    private ObjectManagerSword objectManagerSword;
 
     void Start()
     {
-        objectManager = FindObjectOfType<ObjectManager>();
+        objectManagerSword = FindObjectOfType<ObjectManagerSword>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            objectManager.ObjectCollected();
+            objectManagerSword.ObjectCollected();
             Destroy(gameObject);
         }
     }

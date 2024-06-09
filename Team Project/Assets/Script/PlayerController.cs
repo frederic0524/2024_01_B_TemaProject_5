@@ -65,4 +65,10 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public void IncreaseMoveSpeed(float additionalSpeed)
+    {
+        moveSpeed += additionalSpeed;
+        Debug.Log($"New move speed: {moveSpeed}");
+    }
 }
