@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -69,7 +70,20 @@ public class EnemyAI : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Enemy died!");
-        Destroy(gameObject);
+        
+        Debug.Log("Enemy died");
+
+        
+        StartCoroutine(DieCoroutine());
+    }
+
+    
+    IEnumerator DieCoroutine()
+    {
+        // 일정 시간 대기
+        yield return new WaitForSeconds(1.0f); 
+
+        
+        SceneManager.LoadScene("EndScene");
     }
 }
