@@ -13,14 +13,24 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private float lastAttackTime;
 
+    public Animator animator;
+    private Rigidbody rb;
+
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
         lastAttackTime = -attackCooldown;
     }
 
+   
+
+
+
     void Update()
     {
+        float speed = rb.velocity.magnitude;
+        animator.SetFloat("Speed", speed);
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
