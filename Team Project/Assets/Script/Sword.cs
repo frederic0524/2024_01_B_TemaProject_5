@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
+    public int Rank;            //검의 단계를 나타낼 변수
+
     private ObjectManagerSword objectManagerSword;
 
     void Start()
@@ -15,7 +17,7 @@ public class Sword : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            objectManagerSword.ObjectCollected();
+            objectManagerSword.ObjectCollected(Rank);           //검의 단계를 매개변수로 전달
             Destroy(gameObject);
         }
     }
