@@ -81,4 +81,11 @@ public class PlayerController : MonoBehaviour
         moveSpeed += additionalSpeed;
         Debug.Log($"New move speed: {moveSpeed}");
     }
+
+    public void ReduceAttackCooldown(float reductionAmount)
+    {
+        attackCooldown = Mathf.Max(0.1f, attackCooldown - reductionAmount);
+        Debug.Log($"New attack cooldown: {attackCooldown}");
+    }
+
 }

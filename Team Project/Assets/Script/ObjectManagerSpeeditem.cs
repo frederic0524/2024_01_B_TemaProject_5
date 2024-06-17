@@ -5,9 +5,9 @@ using UnityEngine;
 public class ObjectManagerSpeeditem : MonoBehaviour
 {
     public GameObject objectPrefab;
-    public int initialObjectCount = 10;
-    public int maxObjects = 10;
-    public int minObjects = 4;
+    public int initialObjectCount = 3;
+    public int maxObjects = 3;
+    public int minObjects = 0;
     public Vector3 spawnAreaMin;
     public Vector3 spawnAreaMax;
 

@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 770316056}
   - component: {fileID: 770316055}
   - component: {fileID: 770316054}
+  - component: {fileID: 770316061}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -408,7 +409,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770316053}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc9a515e1b735f44eb256b79b426b20d, type: 3}
   m_Name: 
@@ -535,6 +536,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &770316061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770316053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c70fe3f4b41897e479b14a81c6b5e52c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1621133691}
+  lookRadius: 10
+  attackRadius: 2
+  moveSpeed: 3
+  attackRate: 2
+  attackDamage: 15
+  health: 100
+  uiManager: {fileID: 0}
+  maxHealth: 0
+  rb: {fileID: 0}
+  nextAttackTime: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1249,8 @@ GameObject:
   - component: {fileID: 1813114947}
   - component: {fileID: 1813114946}
   - component: {fileID: 1813114945}
+  - component: {fileID: 1813114949}
+  - component: {fileID: 1813114948}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1259,12 +1285,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5a8374a39a61b44923ed4a54785c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 3435677004279140607, guid: 37eeff614a4e7aa47b109efea5fd95df, type: 3}
+  objectPrefab: {fileID: 919132149155446097, guid: f4c890d29f1ce39459a2a1b710ea7ac9, type: 3}
   initialObjectCount: 3
   maxObjects: 3
   minObjects: 0
   spawnAreaMin: {x: 0, y: 0.5, z: 0}
-  spawnAreaMax: {x: 30, y: 0.5, z: 30}
+  spawnAreaMax: {x: 50, y: 0.5, z: 50}
 --- !u!114 &1813114946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1277,12 +1303,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38931555e5f4d845984154b2ac06d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 7476548712795368478, guid: b05a8ce3ce81cf24a8ced39853af9530, type: 3}
+  objectPrefab: {fileID: 919132149155446097, guid: 8bd6f413752083a4a9835c2489e868d7, type: 3}
   initialObjectCount: 3
   maxObjects: 3
   minObjects: 0
   spawnAreaMin: {x: 0, y: 0.5, z: 0}
-  spawnAreaMax: {x: 30, y: 0.5, z: 30}
+  spawnAreaMax: {x: 50, y: 0.5, z: 50}
 --- !u!114 &1813114947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1300,7 +1326,43 @@ MonoBehaviour:
   maxObjects: 10
   minObjects: 4
   spawnAreaMin: {x: 0, y: 0.5, z: 0}
-  spawnAreaMax: {x: 30, y: 0.5, z: 30}
+  spawnAreaMax: {x: 50, y: 0.5, z: 50}
+--- !u!114 &1813114948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813114942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd394eba54dba0b49b04c69df201e841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 919132149155446097, guid: 6d9b59e2659189544bb142e84e17c836, type: 3}
+  initialObjectCount: 2
+  maxObjects: 2
+  minObjects: 0
+  spawnAreaMin: {x: 0, y: 0.5, z: 0}
+  spawnAreaMax: {x: 50, y: 0.5, z: 50}
+--- !u!114 &1813114949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813114942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ce56c6ee715c84c96e8f0f56e3568b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 740620941685661416, guid: 4c5626724db5ac64ca1e0da2d5998d09, type: 3}
+  initialObjectCount: 2
+  maxObjects: 2
+  minObjects: 0
+  spawnAreaMin: {x: 0, y: 0.5, z: 0}
+  spawnAreaMax: {x: 50, y: 0.5, z: 50}
 --- !u!1001 &1831932220
 PrefabInstance:
   m_ObjectHideFlags: 0
