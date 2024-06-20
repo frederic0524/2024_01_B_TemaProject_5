@@ -414,7 +414,7 @@ MonoBehaviour:
   moveSpeed: 3
   attackRate: 2
   attackDamage: 15
-  health: 100
+  maxHealth: 100
 --- !u!54 &770316055
 Rigidbody:
   m_ObjectHideFlags: 0
