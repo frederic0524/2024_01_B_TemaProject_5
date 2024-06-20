@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -12,14 +11,19 @@ public class EnemyAI : MonoBehaviour
     public float moveSpeed = 3f;
     public float attackRate = 2f;
     public int attackDamage = 15;
-    public int health = 100;
+    public int maxHealth = 100;
 
+    private int currentHealth;
     private Rigidbody rb;
     private float nextAttackTime = 0f;
+    private Slider healthSlider; // 체력바 UI Slider
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        currentHealth = maxHealth;
+        healthSlider = GetComponentInChildren<Slider>(); // 자식 오브젝트에서 Slider 찾기
+        UpdateHealthUI(); // 시작할 때 체력바 UI 초기화
     }
 
     void Update()
@@ -60,9 +64,9 @@ public class EnemyAI : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
-        Debug.Log("Enemy health: " + health);
-        if (health <= 0)
+        currentHealth -= damage;
+        UpdateHealthUI(); // 체력이 감소할 때마다 체력바 UI 업데이트
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -70,20 +74,38 @@ public class EnemyAI : MonoBehaviour
 
     void Die()
     {
-        
         Debug.Log("Enemy died");
-
-        
         StartCoroutine(DieCoroutine());
     }
 
-    
     IEnumerator DieCoroutine()
     {
-        // 일정 시간 대기
-        yield return new WaitForSeconds(1.0f); 
-
-        
+        yield return new WaitForSeconds(1.0f); // 일정 시간 대기
         SceneManager.LoadScene("EndScene");
+    }
+
+    void UpdateHealthUI()
+    {
+        if (healthSlider != null)
+        {
+            StartCoroutine(UpdateHealthSliderSmoothly());
+        }
+    }
+
+    IEnumerator UpdateHealthSliderSmoothly()
+    {
+        float timer = 0f;
+        float duration = 0.5f; // 체력바가 변경되는 시간 (초)
+        float startValue = healthSlider.value;
+        float endValue = (float)currentHealth / maxHealth;
+
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            healthSlider.value = Mathf.Lerp(startValue, endValue, timer / duration);
+            yield return null;
+        }
+
+        healthSlider.value = endValue; // 최종 값을 설정하여 부드럽게 마무리
     }
 }
